@@ -31,7 +31,7 @@ log.info("your email={}, your cellphone={}", "123456789@qq.com","15310763497");
 ```
 2、配置logback-desensitize.yml(后文介绍)
 3、在logback.xml中引入对应的Appender，使用组件里的类代替原来的
-①ConsoleAppender - 控制台脱敏
+###### ①ConsoleAppender - 控制台脱敏
 原配置类：
 ```java
 ch.qos.logback.core.ConsoleAppender
@@ -40,7 +40,7 @@ ch.qos.logback.core.ConsoleAppender
 ```java
 pers.liuchengyin.logbackadvice.LcyConsoleAppender
 ```
-②RollingFileAppender - 滚动文件
+###### ②RollingFileAppender - 滚动文件
 原配置类：
 ```java
 ch.qos.logback.core.rolling.RollingFileAppender
@@ -49,7 +49,7 @@ ch.qos.logback.core.rolling.RollingFileAppender
 ```java
 pers.liuchengyin.logbackadvice.LcyConsoleAppender
 ```
-③FileAppender - 文件
+###### ③FileAppender - 文件
 原配置类：
 ```java
 ch.qos.logback.core.FileAppender
