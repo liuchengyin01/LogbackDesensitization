@@ -10,8 +10,6 @@ import ch.qos.logback.core.FileAppender;
  * @Date 2021/1/9
  */
 public class LcyFileAppender extends FileAppender {
-    public LcyFileAppender() {
-    }
 
     @Override
     protected void subAppend(Object event) {
