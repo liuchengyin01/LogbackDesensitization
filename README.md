@@ -37,10 +37,10 @@ mvn install:install-file -DgroupId=pers.liuchengyin -DartifactId=logback-desensi
 	表示jar对应的groupId  
 	<groupId>pers.liuchengyin</groupId>
  -DartifactId:
-	  -DartifactId: 表示jar对应的artifactId
+	表示jar对应的artifactId
 	<artifactId>logback-desensitization</artifactId>
  -Dversion
-	 -Dversion: 表示jar对应的 version
+	表示jar对应的 version
 	<version>1.0.0</version>
 ```
 
