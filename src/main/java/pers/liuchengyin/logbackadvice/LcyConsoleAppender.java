@@ -13,9 +13,8 @@ public class LcyConsoleAppender extends ConsoleAppender {
 
     @Override
     protected void subAppend(Object event) {
-            DesensitizationAppender appender = new DesensitizationAppender();
-            appender.operation((LoggingEvent)event);
-
+        DesensitizationAppender appender = new DesensitizationAppender();
+        appender.operation((LoggingEvent)event);
         super.subAppend(event);
     }
 }
