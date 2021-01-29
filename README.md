@@ -11,7 +11,7 @@
 注：Map、JSON、List<Map>、POJO、List<Pojo>对象的脱敏处理需要配置其对应的字段名即可,无法处理List<八大类型+字符串>类型。
 在使用本组件的时候，一定要注重日志打印规范。
 	
-具体使用方式见博客(重要！！！)：https://blog.csdn.net/qq_40885085/article/details/113385261
+具体使用方式见博客(重要！重要！重要！)：https://blog.csdn.net/qq_40885085/article/details/113385261
 
 #### 匹配规则：
 key + 分割符 + value，如phone:{},即phone:13436781234。如email={},即email=123456789@qq.com
