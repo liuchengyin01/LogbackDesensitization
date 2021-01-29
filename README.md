@@ -71,7 +71,7 @@ ch.qos.logback.core.rolling.RollingFileAppender
 ```
 替换类：
 ```java
-pers.liuchengyin.logbackadvice.LcyConsoleAppender
+pers.liuchengyin.logbackadvice.LcyRollingFileAppender
 ```
 ###### ③FileAppender - 文件
 原配置类：
