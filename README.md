@@ -10,7 +10,8 @@
 本组件支持的脱敏数据类型：八大基本类型及其包装类型、String类型、Map、List<Map>、JSON字符串、项目中的POJO对象。
 注：Map、JSON、List<Map>、POJO、List<Pojo>对象的脱敏处理需要配置其对应的字段名即可,无法处理List<八大类型+字符串>类型。
 在使用本组件的时候，一定要注重日志打印规范。
-
+	
+具体使用方式见博客(重要！！！)：https://blog.csdn.net/qq_40885085/article/details/113385261
 
 #### 匹配规则：
 key + 分割符 + value，如phone:{},即phone:13436781234。如email={},即email=123456789@qq.com
@@ -53,7 +54,7 @@ mvn install:install-file -DgroupId=pers.liuchengyin -DartifactId=logback-desensi
     <version>1.0.0</version>
 </dependency>
 ```
-2、配置logback-desensitize.yml(后文介绍)
+2、配置logback-desensitize.yml
 3、在logback.xml中引入对应的Appender，使用组件里的类代替原来的
 ###### ①ConsoleAppender - 控制台脱敏
 原配置类：
@@ -82,5 +83,3 @@ ch.qos.logback.core.FileAppender
 ```java
 pers.liuchengyin.logbackadvice.LcyFileAppender
 ```
-
-#### 脱敏规则配置文件 - logback-desensitize.yml
